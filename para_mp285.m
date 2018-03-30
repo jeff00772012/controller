@@ -1,0 +1,6 @@
+model='MP285'
+port='COM8'
+ni='Dev2'
+counter1='ctr1'
+counter2='ctr0'
+aiport='ai3'
