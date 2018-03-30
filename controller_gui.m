@@ -1,9 +1,9 @@
 function controller_gui(para)
 
 % 2018.03.29 Weishung
-% input: para: parameter file 
-%              ex: for thorlabs MCM3000 controller_gui('para_MCM')  
-%       
+% input: para: parameter file
+%              ex: for thorlabs MCM3000 controller_gui('para_MCM')
+%
 %
 % For mp285, no set zero command, need to apply it manually
 
@@ -18,8 +18,8 @@ while 1
         break;
     end
     chara=find(uint8(lines)==39);
-  
-        parameter{count_para}.para = lines(chara(1)+1:chara(2)-1);
+    
+    parameter{count_para}.para = lines(chara(1)+1:chara(2)-1);
     count_para=count_para+1;
 end
 
